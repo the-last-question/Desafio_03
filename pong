@@ -1,0 +1,55 @@
+// projeto PONG 
+
+//definir dimensoes do background e peças
+
+
+ //definir bordas para ficar parecendo uma mesa de ping pong
+void tela(){
+  stroke(#FFFFFF);
+  strokeWeight(5);
+  noFill();
+    rect(10,10,1340,748);
+    
+  stroke(#FFFFFF);
+  strokeWeight(5);
+  line(680,10,680,758);
+
+}
+
+void pecaE(){
+ // yE sera a movimentação feita pelo potenciometro
+  stroke(#FF2B24);
+  rect(20,340,3,120);
+}
+
+
+void pecaD(){
+  
+  stroke(#030202);
+  rect(1337,340,3,120);
+  
+}
+
+
+void placar(){
+  
+  
+}
+
+
+
+void setup(){
+ 
+//definir tamanho e cor da tela
+ size(1360,768); 
+ background(#254193);
+  
+ tela();
+}
+
+
+void draw(){
+  pecaE();
+  pecaD();
+  
+}
