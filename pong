@@ -23,6 +23,7 @@ void pecaE(){
 }
 
 
+
 void pecaD(){
   
   stroke(#030202);
