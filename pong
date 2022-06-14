@@ -1,8 +1,16 @@
 // projeto PONG 
+// Alunos: Rodrigo e Akin
+
+
+
+
+//declarando variaveis
+PFont pong;
+
+
+
 
 //definir dimensoes do background e peças
-
-
  //definir bordas para ficar parecendo uma mesa de ping pong
 void tela(){
   stroke(#FFFFFF);
@@ -19,7 +27,7 @@ void tela(){
 void pecaE(){
  // yE sera a movimentação feita pelo potenciometro
   stroke(#FF2B24);
-  rect(20,340,3,120);
+  rect(20,mouseY,3,120);
 }
 
 
@@ -30,6 +38,15 @@ void pecaD(){
   rect(1337,340,3,120);
   
 }
+
+
+void telaInicial(){
+  
+  pong = createFont("Te X Gyre Heros Regular", 16, true);
+  fill(#FFFFFF);
+  textFont(pong, 36);
+}
+
 
 
 void placar(){
@@ -45,12 +62,26 @@ void setup(){
  size(1360,768); 
  background(#254193);
   
- tela();
+ telaInicial();
 }
 
 
 void draw(){
-  pecaE();
-  pecaD();
+  
+  if(mousePressed == false){
+  textFont(pong, 200);
+  fill(#FFFFFF);
+  
+  textAlign(CENTER);
+  text("PONG", width/2, 300);
+  }
+  
+  if(mousePressed){
+    clear();
+    tela();
+    pecaE();
+    pecaD();
+  }
+
   
 }
