@@ -1,0 +1,106 @@
+// projeto PONG 
+
+
+PFont pong;
+PFont settings;
+PImage foto;
+
+
+//definir dimensoes do background e peças
+void tela(){
+  stroke(#FFFFFF);
+  strokeWeight(5);
+  noFill();
+    rect(10,10,width-20,height-50);
+    
+  stroke(#FFFFFF);
+  strokeWeight(5);
+  line(width/2,10,width/2,height-40);
+
+}
+
+void pecaE(){
+ // yE sera a movimentação feita pelo potenciometro
+  stroke(#FF2B24);
+  fill(#FF2B24);
+  rect(40,mouseY,8,200);
+}
+
+
+void pecaD(){
+  stroke(#030202);
+  fill(#030303);
+  rect(width-50,mouseY,8,200);
+  
+}
+
+
+void telaInicial(){
+      
+     image(foto,0,0);
+     foto.resize(width,height);
+      
+      pong = createFont("Te X Gyre Heros Regular", 16, true);
+      fill(#FFFFFF);
+      textFont(pong, 36);
+      
+      textFont(pong, 200);
+      fill(#FFFFFF);
+  
+      textAlign(CENTER);
+      text("PONG", width/2, 300);
+      
+      
+        settings = createFont("Te X Gyre Heros Regular", 16, true);
+        
+        textFont(settings, 100);
+        fill(#FFFFFF);
+        textAlign(CENTER);
+        text("settings", width/2, height-400);
+}
+
+
+
+void placar(){
+  
+  
+}
+
+
+
+void setup(){
+ 
+//definir tamanho e cor da tela
+ foto = loadImage("/home/rod/Computer-Vision-IEE-RAS-desafio/desafio_VC_RAS/images/penguin.jpeg");
+ fullScreen(); 
+ if (mouseX <= 10 || mouseY <= 10){
+  background(#F05E5E); 
+  }else{
+    background(#254195);
+  }
+ 
+  
+
+}
+
+  void draw(){
+
+    if (mouseX <= 10 || mouseY <= 10){
+  background(#F05E5E); 
+  }else{
+    background(#254195);
+  }
+    
+    
+    if(mouseY >= height-100){
+    telaInicial();   
+    } else {   
+     tela();
+     pecaE();
+     pecaD();
+    }
+    
+
+
+    
+  }
