@@ -67,3 +67,24 @@ void loop()
   
   delay(1000);
 }
+
+
+/* starting the serial comunnicate with the processing 
+
+  void setup (){
+
+    Serial.begin("9600") //this number is our baud, in case, is the frequency that we will use to put the arduino and processing in same languege
+
+  }
+
+
+  void loop(){
+
+    Serial.println('Hello, my beatfull world!');
+      delay (100);
+  }
+
+
+
+
+*/
