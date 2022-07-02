@@ -1,6 +1,6 @@
 // bounce code for pong ball
-float cont = 0.05;
-int rad = 10;        // Width of the shape
+float cont = 1;
+int rad = 20;        // Width of the shape
 float xpos, ypos;    // Starting position of shape    
 
 float xspeed = 6.2 + cont;  // Speed of the shape
@@ -24,30 +24,45 @@ void movementSetup()
 
 void movementDraw() 
 {
-  cont = cont + 0.00005;
+  cont = cont + 0.0005;  
   
   xspeed = 3.0 + cont;  // Speed of the shape
   yspeed = 1.0 + cont; 
   
-  // Update the position of the shape
+  // Update the position of the shape 
   
   xpos = xpos + ( xspeed * xdirection );
   ypos = ypos + ( yspeed * ydirection );
   
-  // Test to see if the shape exceeds the boundaries of the screen
-  // If it does, reverse its direction by multiplying by -1
-  if (xpos > width-rad || xpos < rad) {
+  // Test to see if the shape exceeds the boundaries of the screen and the paddle 
+  // If it does, reverse its direction by multiplying by -1 or place the ball in the middle and increase the score
+  
+  if (xpos < 68 && (ypos < mouseY+200 && ypos > mouseY) || xpos > width-68 && (ypos < mouseY+200 && ypos > mouseY)) {
+    xdirection *= -1;   
+  } else if (xpos > width) {
+    scoreLeft = scoreLeft + 1;    
+    xpos = width/2;
+    ypos = height/2;
+    delay(500);
     xdirection *= -1;
-    //delay(500);
-    //movementSetup();
+    cont = 1;
+  }
+  if (xpos < 0) {
+    scoreRight = scoreRight + 1;
+    xpos = width/2;
+    ypos = height/2;
+    delay(500);
+    xdirection *= -1;
+    cont = 1;
   }
   if (ypos > height-rad-30 || ypos < rad+30) {
     ydirection *= -1;
     //delay(500);
-    //movementSetup();
-    
+    //movementSetup();    
   }
-
+  
   // Draw the shape
+  fill(#FFFFFF);
+  stroke(#FFFFFF);
   ellipse(xpos, ypos, rad, rad);
 }
