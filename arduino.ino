@@ -29,7 +29,11 @@ void setup()
 
 void loop()
 {
-  
+  Serial.println('Hello, my beatfull world!');
+      delay (100);
+  Serial.println('Now we will start the comunicate');
+      delay (150);
+      
  analogRead(pot1);
  analogRead(pot2);
   pause = digitalRead(pauseButton);
@@ -67,3 +71,4 @@ void loop()
   
   delay(1000);
 }
+
