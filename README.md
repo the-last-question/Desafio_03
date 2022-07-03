@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **DESAFIO 03 - desenvolvimento de uma plataforma de jogo**
  
 O objetivo desse desafio é fazer com que um sistema embarcado receba uma string de um outro sistema embarcado e disponibilize esta informação num display.
@@ -34,3 +35,10 @@ Acesse o [desafio 2](https://www.tinkercad.com/things/7rxjiAGjmyg-desafio-03-sis
 <img src="https://user-images.githubusercontent.com/99812296/165873452-3f48a92b-4979-424b-b482-9007e53e4622.png" width="500"/>
 </div>
 <br/>
+=======
+# Desafio_03
+Repositório do desafio 03 (rodrigo e Akin)
+
+Branch para os codigos de rodrigo
+O pai ta on
+>>>>>>> origin/Rodrigo
