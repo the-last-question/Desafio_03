@@ -14,12 +14,12 @@ Acesse o [desafio 3](https://www.tinkercad.com/things/7rxjiAGjmyg-desafio-03-sis
 <br/>
 
 # **HARDWARE** :
-
+Abaixo está a representação de uma simulação feita no tinkercad do arduino para o pong.
 <br/>
 <br/>
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/165871446-b368f0df-e81d-440b-8ff5-2a61fcd34921.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/99812296/177029249-f28cc798-b4f5-4522-99c6-99659e99ec3f.png" width="500"/>
 </div>
 
 - ## **Componentes**
