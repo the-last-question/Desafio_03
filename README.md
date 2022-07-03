@@ -5,10 +5,10 @@ O objetivo desse desafio é fazer com que um sistema embarcado receba uma string
 O projeto envolverá dois sistemas embarcados, no qual um dos sistemas está realizando a leitura de distanciamento de um objeto, essa leitura deve ser disponibilizada no display de um outro sistema que está conectado com o primeiro via comunicação serial.
 <br/>
 <br/>
-Acesse o [desafio 2](https://www.tinkercad.com/things/7rxjiAGjmyg-desafio-03-sist-embarcados/editel?sharecode=aEA1r1uhOvTOz76HlKjHzsmui2sIZZILya43ItDnJtU).
+Acesse o [desafio 3](https://www.tinkercad.com/things/7rxjiAGjmyg-desafio-03-sist-embarcados/editel?sharecode=aEA1r1uhOvTOz76HlKjHzsmui2sIZZILya43ItDnJtU).
 
  <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/165872665-fcb8af8b-6a28-4b8c-a027-774639fcc029.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/99812296/177029184-dcc8ab95-d58e-4f75-8a64-2955113a7c28.png" width="500"/>
 </div>
 
 <br/>
