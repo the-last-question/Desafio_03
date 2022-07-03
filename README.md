@@ -19,18 +19,18 @@ Abaixo está a representação de uma simulação feita no tinkercad do arduino 
 <br/>
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/177029249-f28cc798-b4f5-4522-99c6-99659e99ec3f.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/99812296/177029249-f28cc798-b4f5-4522-99c6-99659e99ec3f.png" width="700"/>
 </div>
 
 - ## **Componentes**
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/165872214-5c897a03-1622-41a5-aa97-29c23e3dbeee.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/99812296/177029308-c177312f-3f73-47f6-995c-48e85c23e592.png" width="700" />
 </div>
  
  - ## **esquemático** :
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/165873452-3f48a92b-4979-424b-b482-9007e53e4622.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/99812296/165873452-3f48a92b-4979-424b-b482-9007e53e4622.png" width="700"/>
 </div>
 <br/>
