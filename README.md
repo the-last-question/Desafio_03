@@ -1,8 +1,9 @@
 # **DESAFIO 03 - desenvolvimento de uma plataforma de jogo**
  
-O objetivo desse desafio é fazer com que um sistema embarcado receba uma string de um outro sistema embarcado e disponibilize esta informação num display.
+O objetivo deste desafio é desenvolver uma plataforma para jogar o jogo clássico PONG, sendo um dos primeiros “games” do mundo.
 
-O projeto envolverá dois sistemas embarcados, no qual um dos sistemas está realizando a leitura de distanciamento de um objeto, essa leitura deve ser disponibilizada no display de um outro sistema que está conectado com o primeiro via comunicação serial.
+O desafiante deverá usar uma placa de arduino e dois potenciômetros para controlar as hastes de defesa. Idealizado como um jogo de tênis de mesa, o Pong utiliza estas hastes laterais, movendo-as verticalmente rebatendo a bola, a qual será simulada por quadrado ou círculo na tela. Cada haste é controlada por cada potenciômetro. 
+Além disso, considere dois botões tipo “push-buttons” de quatro terminais para realizar a função de reiniciar o jogo e o outro para parar a execução do jogo.
 <br/>
 <br/>
 Acesse o [desafio 3](https://www.tinkercad.com/things/7rxjiAGjmyg-desafio-03-sist-embarcados/editel?sharecode=aEA1r1uhOvTOz76HlKjHzsmui2sIZZILya43ItDnJtU).
@@ -31,6 +32,6 @@ Abaixo está a representação de uma simulação feita no tinkercad do arduino 
  - ## **esquemático** :
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/99812296/165873452-3f48a92b-4979-424b-b482-9007e53e4622.png" width="700"/>
+<img src="https://user-images.githubusercontent.com/99812296/177029396-35022a32-a672-4eb3-952f-63828ee3ae31.png" width="700"/>
 </div>
 <br/>
