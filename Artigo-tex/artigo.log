@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.19)  3 JUL 2022 03:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.19)  4 JUL 2022 00:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -334,47 +334,46 @@ File: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 02-55-52.png Graphi
 <use /home/rod/Desafio_03/images/Screenshot from 2022-07-03 02-55-52.png>
 Package pdftex.def Info: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 02-55-52.png  used on input line 97.
 (pdftex.def)             Requested size: 206.39685pt x 154.68825pt.
-</home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png, id=3, 365.365pt x 281.05pt>
-File: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png Graphic file (type png)
-<use /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png>
-Package pdftex.def Info: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png  used on input line 158.
-(pdftex.def)             Requested size: 206.39685pt x 158.7678pt.
+</home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png, id=3, 442.65375pt x 261.97874pt>
+File: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png Graphic file (type png)
+<use /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png>
+Package pdftex.def Info: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png  used on input line 159.
+(pdftex.def)             Requested size: 206.39685pt x 122.15463pt.
+</home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png, id=4, 939.51pt x 145.54375pt>
+File: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png Graphic file (type png)
+<use /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png>
+Package pdftex.def Info: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png  used on input line 165.
+(pdftex.def)             Requested size: 206.39685pt x 31.97308pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/rod/Desafio_03/images/Screenshot from 2022-07-03 02-55-52.png>]
-</home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg, id=17, 223.83624pt x 186.6975pt>
-File: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg Graphic file (type jpg)
-<use /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg>
-Package pdftex.def Info: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg  used on input line 164.
-(pdftex.def)             Requested size: 103.19843pt x 86.07845pt.
-</home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png, id=18, 608.2725pt x 391.4625pt>
-File: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png Graphic file (type png)
-<use /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png>
-Package pdftex.def Info: /home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png  used on input line 170.
-(pdftex.def)             Requested size: 206.39685pt x 132.82669pt.
+File: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png Graphic file (type png)
+<use /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png>
+Package pdftex.def Info: /home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png  used on input line 175.
+(pdftex.def)             Requested size: 206.39685pt x 31.97308pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 []\OT1/ptm/m/n/10 Arduino. Ar-duino, 2022. Dispon[]^^Pvel em:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 []\OT1/ptm/m/n/10 Britannica, The Ed-i-tors of En-cy-clopae-dia.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10 "Pong". En-cy-clo-pe-dia Bri-tan-nica, In-valid Date,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10 https://www.britannica.com/topic/Pong. Ac-cessed 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 []\OT1/ptm/m/n/10 Processing. Pro-cess-ing.org. Dispon[]^^Pvel em:
  []
 
@@ -389,24 +388,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 </home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png> </home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg> </home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png>] (./artigo.aux)
+[2 </home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png> </home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png>] (./artigo.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6242 strings out of 478287
- 101719 string characters out of 5849289
- 680366 words of memory out of 5000000
- 24360 multiletter control sequences out of 15000+600000
+ 6233 strings out of 478287
+ 101156 string characters out of 5849289
+ 681366 words of memory out of 5000000
+ 24354 multiletter control sequences out of 15000+600000
  509430 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,77p,235b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo.pdf (2 pages, 1276240 bytes).
+Output written on artigo.pdf (2 pages, 1255815 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

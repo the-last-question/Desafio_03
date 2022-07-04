@@ -116,7 +116,7 @@ void draw(){
     
   if(mousePressed == false){
     telaInicial();
-  } else if(mousePressed == true){
+  } else if(mousePressed == true &&  (mouseY >= height-700 && mouseY <= height-600) ){
     cont1 ++;
   }
   

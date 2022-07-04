@@ -148,30 +148,34 @@ O objetivo desse desafio é montar um sistema embarcado refazendo o clássico jo
 \subsection{Métodos}
 A construção do desafio foi dividida em duas partes, hardware e software. 
 
-A construção do hardware começou com o cabeamento do sensor ultrassônico, que possui 4 portas: VCC e GND (para
-energizar o sensor) e Trigger e Echo (para enviar e receber dados de distâncias, respectivamente). Da mesma maneira,
-foi conectado um LED rgb que possui 4 portas: red (vermelho), green (verde), blue (azul) e GND. Além do display LCD (16x2)
-que para conexão, são 16 pinos, dos quais usamos 12 para uma conexão básica, já incluindo as conexões de alimentação (pinos 1 e 2),
- backlight (pinos 15 e 16) e contraste (pino 3).
+A parte de harware conta com a conexão de potenciômetros e pushbuttons, mas para a integração desses componentes com o pong
+foi necessário utilizar 
+
+A divisão do processing começou criando o ambiente do jogo, tela(); e telaInicial(); e utilizando a tela em modo fullScreen
+pela função fullScreen();
+
 
  \begin{figure}[htbp]
-    \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-05-10.png}}
-    \caption{Sensor ultrassônico (HC-SR04)}
+    \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-36-41.png}}
+    \caption{Função para criação do ambiente de jogo}
     \label{fig}
     \end{figure}
 
     \begin{figure}[htbp]
-        \centerline{\includegraphics[width=0.2\textwidth]{/home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-00-02.jpg}}
-        \caption{LED RGB}
+        \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png}}
+        \caption{definição de tamanho de tela e plano de fundo}
         \label{fig}
         \end{figure}
 
-        \begin{figure}[htbp]
-            \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Pictures/Screenshots/Screenshot from 2022-05-25 22-07-15.png}}
-            \caption{LCD (16x2)}
-            \label{fig}
-            \end{figure}
+Toda movimentação feita pela bola, inclusive as colisões com as bordas e barras foram feitas separadamente afim de 
+facilitar a leitura, dessa forma, definiu-se o tamanho, velocidade e condições para movimentação da bola. Ao fim, 
+espera-se obter tal resultado:
 
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png}}
+    \caption{definição de tamanho de tela e plano de fundo}
+    \label{fig}
+    \end{figure}
 
 \section{Metodologia}
  A atividade desenvolvida foi realizada com conhecimentos prévios sobre C++ e eletrônica básica em Arduinos, porém, para sanar as dúvidas e dificuldades encontradas no
