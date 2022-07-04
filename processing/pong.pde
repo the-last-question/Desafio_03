@@ -26,6 +26,11 @@ int contRed = 0;
 int contlightBlue = 0;
 int contblack = 0;
 
+//fonte para gameover
+PFont gameover;
+int contGameOver = 0;
+
+
 
 //definir dimensoes do background e peças
 void tela(){
@@ -133,6 +138,25 @@ void placar(){
     text(scoreRight, width/2+30, 60); // Right side score
     text(scoreLeft, width/2-30, 60); // Left side score
   
+      if(scoreLeft > 1 || scoreRight > 1){
+        clear();
+        background(#000000);
+        gameover = createFont("Te X Gyre Heros Regular", 16, true);     
+        textFont(gameover, 200);
+        fill(#FFFFFF);  
+        textAlign(CENTER);
+        text("GAME OVER", width/2, height/2);
+          if(mousePressed == true && contGameOver == 0){
+            delay(100);
+            cont1 = 0;
+            scoreLeft = 0;
+            scoreRight = 0;
+            contGameOver = 0;
+            cont = 1; //zerar a velocidade da bola
+            xpos = width/2; //colocar a bola na posição neutra
+            ypos = height/2;
+          }        
+      }
 }
 
 
@@ -218,8 +242,7 @@ void draw(){
   
   
   if(cont2 > 0){
-    setting();
-    
+    setting();    
   }
    
 }
