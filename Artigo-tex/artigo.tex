@@ -161,33 +161,35 @@ pela função fullScreen();
     \label{fig}
     \end{figure}
 
-    \begin{figure}[htbp]
-        \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png}}
-        \caption{definição de tamanho de tela e plano de fundo}
-        \label{fig}
-        \end{figure}
 
 Toda movimentação feita pela bola, inclusive as colisões com as bordas e barras foram feitas separadamente afim de 
 facilitar a leitura, dessa forma, definiu-se o tamanho, velocidade e condições para movimentação da bola. Ao fim, 
 espera-se obter tal resultado:
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-03 23-40-26.png}}
-    \caption{definição de tamanho de tela e plano de fundo}
+    \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-04 00-53-09.png}}
+    \caption{tela Inicial}
     \label{fig}
     \end{figure}
 
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[width=0.4\textwidth]{/home/rod/Desafio_03/images/Screenshot from 2022-07-04 00-53-47.png}}
+        \caption{tela do jogo}
+        \label{fig}
+        \end{figure}
+
 \section{Metodologia}
  A atividade desenvolvida foi realizada com conhecimentos prévios sobre C++ e eletrônica básica em Arduinos, porém, para sanar as dúvidas e dificuldades encontradas no
- desenvolvimento da atividade foram utilizadas documentações de bibliotecas no site (1), e para realizar todo experimento foi utilizada a plataforma Tinkercad, que é
+ desenvolvimento da atividade foram utilizadas documentações de bibliotecas no site (1), também o site StackOverflow que possui diversos foruns de perguntas e respostas comuns
+ e para realizar todo experimento foi utilizada a plataforma Tinkercad, que é
  muito bem otimizada além de ser gratuita e ser capaz de realizar simulações.
 
 \section{Resultados}
- Ao concluir as conexões e códigos percebeu-se que só era possível ler e imprimir a informação passada de um arduino para outro caso houvesse um delay de ao menos 3 segundos
- entre cada envio de informação, dessa maneira o sistema não ficou muito otimizado, visto que, são necessários ao menos 3 segundos para executar sua função, e, por conta
- do delay do sistema a LED RGB também ficou com um certo delay para mudar de cor. Por outro lado, o sistema desenvolvido consegue ler corretamente as distâncias em cm 
- , identificar em qual região ela pertence e por consequência alertar a proximidade do objeto de com uma LED RGB inserida no sistema e também informar a disância do objeto
- em um LCD conectado no segundo arduino por meio de uma conexão serial.
+ Por fim, foi possivel criar uma interface gráfica simples que atende a ideia do pong, assim como toda lógica de movimentação da bola e bem como
+ a pontuação e efeito das colisões das barras com a bola.
+ no entanto, durante o caminho foram encontradas dificuldades quanto a realização
+ da comunicação do arduino com o processing, de mesma forma, diante do curto prazo para realização não foi possivel implementar
+ grandes inovações ao jogo, não foi possivel trazer as ideias para realização.
 
 \section*{Referências}
 
