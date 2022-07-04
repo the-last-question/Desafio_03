@@ -103,15 +103,15 @@ void placar(){
 
 void setup(){
  
-//definir tamanho e cor da tela
+//definir tamanho e foto para fundo da tela
  foto = loadImage("/home/rod/Computer-Vision-IEE-RAS-desafio/desafio_VC_RAS/images/penguin.jpeg");
  fullScreen(); 
- movementSetup();
+
 }
 
 
 
-
+ movementSetup();
 void draw(){
     
   if(mousePressed == false){
