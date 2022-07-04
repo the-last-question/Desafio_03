@@ -3,8 +3,8 @@ float cont = 1;
 int rad = 20;        // Width of the shape
 float xpos, ypos;    // Starting position of shape    
 
-float xspeed = 3.0 + cont;  // Speed of the shape
-float yspeed = 1.0 + cont;  // Speed of the shape
+float xspeed = 6.2 + cont;  // Speed of the shape
+float yspeed = 2.2 + cont;  // Speed of the shape
 
 int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
@@ -57,7 +57,8 @@ void movementDraw()
   }
   if (ypos > height-rad-30 || ypos < rad+30) {
     ydirection *= -1;
-   
+    //delay(500);
+    //movementSetup();    
   }
   
   // Draw the shape
