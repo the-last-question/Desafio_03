@@ -10,11 +10,48 @@ int scoreLeft = 0;
 int scoreRight = 0;
 
 int cont1 = 0;   //contador do mousePressed(); pra iniciar o jogo caso seja maior que 0
+int cont2 = 0;   //contador para iniciar settings
+
+//fontes para settings
+
+PFont colorSelector;
+PFont red;
+PFont lightBlue;
+PFont black;
+
+// contadores para mudar de cor a tela
+
+int contDefault = 0;
+int contRed = 0;
+int contlightBlue = 0;
+int contblack = 0;
 
 
+int corTela = #254195;
 //definir dimensoes do background e peças
 void tela(){
-  background(#254195);
+  if(contDefault = 0){
+    background(#254195);
+    contRed = 0;
+    contlightBlue = 0;
+    contblack = 0;
+  }
+  if(contRed > 0){
+    background(corTela);
+    contlightBlue = 0;
+    contblack = 0;
+  }
+  if(contlightBlue > 0){
+    background(corTela);
+    contRed = 0;
+    contblack = 0;    
+  }
+  if(contblack > 0){
+    background(corTela);
+    contRed = 0;
+    contlightBlue = 0;    
+  }
+  
   stroke(#FFFFFF);
   strokeWeight(5);
   noFill();
@@ -40,8 +77,8 @@ void pecaE(){
 
 
 void pecaD(){
-  stroke(#030202);
-  fill(#030303);
+  stroke(#D7F51E);
+  fill(#D7F51E);
   rect(width-50,mouseY,8,200);  
 }
 
@@ -54,7 +91,7 @@ void telaInicial(){
       
       background(#4A498B);
       
-      pong = createFont("Courier10PitchBT-Bold-48", 16, true);     
+      pong = createFont("Te X Gyre Heros Regular", 16, true);     
       textFont(pong, 200);
       fill(#FFFFFF);  
       textAlign(CENTER);
@@ -100,6 +137,41 @@ void placar(){
 }
 
 
+void setting(){
+  
+  background(#4A498B);
+  
+  colorSelector = createFont("Te X Gyre Heros Regular", 16, true);
+  textFont(colorSelector, 200);
+  fill(#FFFFFF);
+  textAlign(CENTER);
+  text("Color Selector", width/2, 300);
+  
+    red = createFont("Te X Gyre Heros Regular", 16, true);
+    textFont(red, 80);
+    stroke(#FFFFFF);
+    fill(#FA6074);
+    textAlign(CENTER);
+    text("Red", width/2, height/2);
+
+  
+       lightBlue = createFont("Te X Gyre Heros Regular", 16, true);
+       textFont(lightBlue, 80);
+       stroke(#FFFFFF);
+       fill(#60FAF9);
+       textAlign(CENTER);
+       text("Light Blue", width/2, (height/2)+150);
+      
+        black = createFont("Te X Gyre Heros Regular", 16, true);
+        textFont(black, 80);
+        stroke(#FFFFFF);
+        fill(#000000);
+        textAlign(CENTER);
+        text("Black", width/2, (height/2)+300);
+        
+}
+
+
 
 void setup(){
  
@@ -118,6 +190,8 @@ void draw(){
     telaInicial();
   } else if(mousePressed == true &&  (mouseY >= height-700 && mouseY <= height-600) ){
     cont1 ++;
+  } else if(mousePressed == true &&  (mouseY >= height-500) && (mouseY <= height-400  ) ){
+     cont2++; 
   }
   
   if(cont1 > 0){
@@ -128,6 +202,12 @@ void draw(){
     movementDraw();
     placar();
               
+  }
+  
+  
+  if(cont2 > 0){
+    setting();
+    
   }
    
 }
