@@ -3,8 +3,8 @@ float cont = 1;
 int rad = 20;        // Width of the shape
 float xpos, ypos;    // Starting position of shape    
 
-float xspeed = 6.2 + cont;  // Speed of the shape
-float yspeed = 2.2 + cont;  // Speed of the shape
+float xspeed = 3.0 + cont;  // Speed of the shape
+float yspeed = 1.0 + cont;  // Speed of the shape
 
 int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
@@ -12,7 +12,7 @@ int ydirection = 1;  // Top to Bottom
 
 void movementSetup() 
 { 
-  frameRate(60);
+  frameRate(70);
   ellipseMode(RADIUS);
   // Set the starting position of the shape
   xpos = width/2;
@@ -24,7 +24,7 @@ void movementSetup()
 
 void movementDraw() 
 {
-  cont = cont + 0.0005;  
+  cont = cont + 0.00005;  
   
   xspeed = 3.0 + cont;  // Speed of the shape
   yspeed = 1.0 + cont; 

@@ -27,27 +27,26 @@ int contlightBlue = 0;
 int contblack = 0;
 
 
-int corTela = #254195;
 //definir dimensoes do background e peças
 void tela(){
-  if(contDefault = 0){
+  if(contDefault == 0){
     background(#254195);
     contRed = 0;
     contlightBlue = 0;
     contblack = 0;
   }
   if(contRed > 0){
-    background(corTela);
+    background(#FA6074);
     contlightBlue = 0;
     contblack = 0;
   }
   if(contlightBlue > 0){
-    background(corTela);
+    background(#60FAF9);
     contRed = 0;
     contblack = 0;    
   }
   if(contblack > 0){
-    background(corTela);
+    background(#000000);
     contRed = 0;
     contlightBlue = 0;    
   }
@@ -153,6 +152,11 @@ void setting(){
     fill(#FA6074);
     textAlign(CENTER);
     text("Red", width/2, height/2);
+    if(mousePressed == true &&  (mouseY >= (height/2)-40 && mouseY <= (height/2)+40) ){
+       contRed ++; 
+       contDefault ++;
+       cont2 = 0;              
+    }
 
   
        lightBlue = createFont("Te X Gyre Heros Regular", 16, true);
@@ -161,6 +165,11 @@ void setting(){
        fill(#60FAF9);
        textAlign(CENTER);
        text("Light Blue", width/2, (height/2)+150);
+       if(mousePressed == true &&  (mouseY >= ((height/2)+150)-40 && mouseY <= ((height/2)+150)+40 )){
+          contlightBlue ++; 
+          contDefault ++;
+          cont2 = 0;          
+      }
       
         black = createFont("Te X Gyre Heros Regular", 16, true);
         textFont(black, 80);
@@ -168,7 +177,11 @@ void setting(){
         fill(#000000);
         textAlign(CENTER);
         text("Black", width/2, (height/2)+300);
-        
+        if(mousePressed == true &&  (mouseY >= ((height/2)+300)-40 && mouseY <= ((height/2)+300)+40 )){
+          contblack ++;   
+          contDefault ++;
+          cont2 = 0;
+      }
 }
 
 
@@ -195,7 +208,6 @@ void draw(){
   }
   
   if(cont1 > 0){
-  
     tela();
     pecaE();
     pecaD();
