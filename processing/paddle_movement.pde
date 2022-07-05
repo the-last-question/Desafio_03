@@ -1,5 +1,5 @@
 
-
+//definir peca esquerda
 void pecaE(){
  // mouseY sera a movimentação feita pelo potenciometro
   stroke(#FF2B24);
@@ -11,7 +11,7 @@ void pecaE(){
 }
 
 
-
+//definir peca direita
 void pecaD(){
   stroke(#D7F51E);
   fill(#D7F51E);

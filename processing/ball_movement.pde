@@ -34,12 +34,13 @@ void movementDraw()
   xpos = xpos + ( xspeed * xdirection );
   ypos = ypos + ( yspeed * ydirection );
   
-  // Test to see if the shape exceeds the boundaries of the screen and the paddle 
-  // If it does, reverse its direction by multiplying by -1 or place the ball in the middle and increase the score
+  // teste de colisões com bordas do jogo e barras 
+  //se houver colisão com as barras inverte a vx
+  // se houver colisão com as bordas coloca a bola no meio e aumenta a pontuação do player
   
   if (xpos < 68 && (ypos < pot1 +200 && ypos > pot1) || xpos > width-68 && (ypos < pot2+200 && ypos > pot2)) {
     xdirection *= -1;   
-  } else if (xpos > width) {
+  } else if (xpos > width) { // ponto pro lado esquerdo
     scoreLeft = scoreLeft + 1;    
     xpos = width/2;
     ypos = height/2;
@@ -47,7 +48,7 @@ void movementDraw()
     xdirection *= -1;
     cont = 1;
   }
-  if (xpos < 0) {
+  if (xpos < 0) { //ponto pro lado direito
     scoreRight = scoreRight + 1;
     xpos = width/2;
     ypos = height/2;
@@ -55,13 +56,13 @@ void movementDraw()
     xdirection *= -1;
     cont = 1;
   }
-  if (ypos > height-rad-30 || ypos < rad+30) {
+  if (ypos > height-rad-30 || ypos < rad+30) { // bola bate no teto ou no chão
     ydirection *= -1;
     //delay(500);
     //movementSetup();    
   }
   
-  // Draw the shape
+  //desenhando a bola
   fill(#FFFFFF);
   stroke(#FFFFFF);
   ellipse(xpos, ypos, rad, rad);

@@ -5,10 +5,10 @@
 #include <string.h>
 
 
-const int pot1 = A0, pot2 = A1; //Potenciometros
+int pot1 = A0, pot2 = A1; //Potenciometros
 int vPot1 = 0, vPot2 = 0; //Valores dos potenciometros
 
-int point[10];
+
 
 void setup() {
   Serial.begin(9600);
@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   vPot1 = analogRead(pot1);
-  Serial.print(String(vPot1) + "/");
+  Serial.print(String(vPot1) + "/"); //tranforma vpot1 e vpot2 em string
   
   vPot2 = analogRead(pot2);
   Serial.print(String(vPot2) + "/" + "\n");
