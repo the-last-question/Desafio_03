@@ -114,7 +114,7 @@ void placar(){
     text(scoreRight, width/2+30, 60); // Right side score
     text(scoreLeft, width/2-30, 60); // Left side score
   
-      if(scoreLeft > 7 || scoreRight > 7){
+      if(scoreLeft > 2 || scoreRight > 2){
         clear();
         background(#000000);
         gameover = createFont("Te X Gyre Heros Regular", 16, true);     

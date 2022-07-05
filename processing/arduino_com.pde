@@ -1,21 +1,19 @@
 import processing.serial.*;
 
+
 Serial myPort;
-int port;
 
 float pot1;
 float pot2;
 int bot;
-int h;
 
-String pacote = "";
-char[] pacoteAberto;
 
-int seletor = 0;
+String strpack = "";
+char[] comms;
 
-String strBarra1 = "", strBarra2 = "";
-String botao1 = "", botao2 = "";
+int pointer = 0;
 
+String paddleL = "", paddleR = "";
 
 void serialSetup(){
   String portName = Serial.list()[0];
@@ -25,108 +23,30 @@ void serialSetup(){
 
 void serial(){
 if (myPort.available() > 0) {
-    pacote = myPort.readStringUntil('\n');
+    strpack = myPort.readStringUntil('\n');
 
-    if (pacote != null) {
-      strBarra1 = "";
-      strBarra2 = "";
-      botao1 = "";
-      botao2 = "";
+    if (strpack != null) {
+      paddleL = "";
+      paddleR = "";
+      comms = strpack.toCharArray();
 
-      pacoteAberto = pacote.toCharArray();
-
-      for (int i = 0; i < pacote.length(); i++) {
-        if (pacoteAberto[i] == '-') {
-          seletor++;
-          //i++;
+      for (int i = 0; i < strpack.length(); i++) {
+        if (comms[i] == '/') {
+          pointer++;
+          i++;
         }
 
-        if (seletor == 0) strBarra1 += pacoteAberto[i];
-        if (seletor == 1) strBarra2 += pacoteAberto[i];
-        if (seletor == 2) botao1 += pacoteAberto[i];;
+        if (pointer == 0) paddleL += comms[i];
+        if (pointer == 1) paddleR += comms[i];
       }
-      //println(strBarra1);
-      //println(strBarra2);
       
-      pot1 = map(float(strBarra1) ,0,1023, 0, height);
-      pot2 = -(map(float(strBarra2) ,0,1023, 0, height));
-      
+      pot1 = map(float(paddleL) ,0,1023, 0, height);
+      pot2 = map(float(paddleR) ,0,1023, 0, height);      
       
       println(pot1);
       println(pot2);
-      seletor = 0;
+      pointer = 0;
     }
 
   }  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  if(myPort.available() > 0){
-    //myPort.clear();
-    String inBuffer = myPort.readString(); 
-    String aux0="", aux1="", aux2="", aux3="";
-    int cont = 0;
-    if (inBuffer != null) {
-      println(inBuffer);
-      for(int i =0; i< inBuffer.length(); i++){
-        
-        if((inBuffer.charAt(i) != '-') && cont == 0){
-          aux0 += inBuffer.charAt(i);
-          println(inBuffer.charAt(i));
-          pot1 = Integer.parseInt(aux0);
-          
-        } else if((inBuffer.charAt(i) != '-') && cont == 1){
-          aux1 += inBuffer.charAt(i);
-          println(inBuffer.charAt(i));
-          bot = Integer.parseInt(aux1);
-          
-        } else if((inBuffer.charAt(i) != '-') && cont == 2){
-          aux2 += inBuffer.charAt(i);
-          println(inBuffer.charAt(i));
-          pot2 = Integer.parseInt(aux2);
-          
-        } else if((inBuffer.charAt(i) != '-') && cont == 3){
-          aux3 += inBuffer.charAt(i);
-          println(inBuffer.charAt(i));
-          
-        } else if(inBuffer.charAt(i) == '-'){
-          cont +=1;
-          println("");
-        }
-      }
-      pot1 = Integer.parseInt(strBarra1);
-      //bot = Integer.parseInt(aux1);
-      //pot2 = Integer.parseInt(aux2);
-    
-      //pot1 = map(pot1 ,0,1020, 0, height);
-      //pot2 = map(pot2 ,0,1020, 0, height);
-      //cont = 0;
-
-    }
-    
-   // println(pot1);
- }*/  

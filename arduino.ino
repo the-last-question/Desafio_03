@@ -4,52 +4,27 @@
 #include <stdlib.h>
 #include <string.h>
 
-char point[10];
-int pot1 = A0;
-int pot2 = A1;
-int bot = 5;
-//int sense2 = 6;
 
+const int pot1 = A0, pot2 = A1; //Potenciometros
+int vPot1 = 0, vPot2 = 0; //Valores dos potenciometros
 
+int point[10];
 
-void setup()
-{
+void setup() {
+  Serial.begin(9600);
   pinMode(pot1, INPUT);
   pinMode(pot2, INPUT);
-  pinMode(bot, INPUT);
-  Serial.begin(9600);
+  
+
 }
 
-void loop()
-{
-        
-// creating variables for a short code
-    int sens1; 
-    int sens2; 
-    int sens11; 
-    // 
-    int sens22; 
+void loop() {
+  vPot1 = analogRead(pot1);
+  Serial.print(String(vPot1) + "/");
   
-  sens1 = analogRead(pot1);
-  itoa(sens1, point, 10);
-  Serial.write(point);
-  Serial.write("-");
+  vPot2 = analogRead(pot2);
+  Serial.print(String(vPot2) + "/" + "\n");
 
-  sens1 = analogRead(pot2);
-  itoa(sens2, point, 10);
-  Serial.write(point);
-  Serial.write("-");
-
-  sens1 = analogRead(bot);
-  itoa(sens11, point, 10);
-  Serial.write(point);
-  Serial.write("-");
-
- // sens1 = analogRead(sense2);
- // itoa(sens22, point, 10);
- // Serial.write(point);
- // Serial.write("-");
- 
- Serial.write('\n');
-  delay(20);
+  
+  delay(50);
 }
