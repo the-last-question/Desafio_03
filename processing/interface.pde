@@ -67,7 +67,7 @@ void tela(){
 void telaInicial(){
       
       //image(foto,0,0);
-      //foto.resize(width,height);=+++
+      //foto.resize(width,height);
       
       background(#4A498B);
       
@@ -114,7 +114,7 @@ void placar(){
     text(scoreRight, width/2+30, 60); // Right side score
     text(scoreLeft, width/2-30, 60); // Left side score
   
-      if(scoreLeft > 1 || scoreRight > 1){
+      if(scoreLeft > 7 || scoreRight > 7){
         clear();
         background(#000000);
         gameover = createFont("Te X Gyre Heros Regular", 16, true);     

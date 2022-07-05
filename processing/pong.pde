@@ -16,7 +16,7 @@ void setup(){
 
 
 void draw(){
-   serial(); 
+
   if(mousePressed == false){
     telaInicial();
   } else if(mousePressed == true &&  (mouseY >= height-700 && mouseY <= height-600) ){
@@ -25,7 +25,7 @@ void draw(){
      cont2++; 
   }
   
-  if(cont1 == 0){
+  if(cont1 > 0){
     serial();
     tela();
     pecaE();
