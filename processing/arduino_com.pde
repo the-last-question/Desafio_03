@@ -27,14 +27,17 @@ void serial(){
         if((inBuffer.charAt(i) != '-') && cont == 0){
           aux0 += inBuffer.charAt(i);
           println(inBuffer.charAt(i));
+          pot1 = Integer.parseInt(aux0);
           
         } else if((inBuffer.charAt(i) != '-') && cont == 1){
           aux1 += inBuffer.charAt(i);
           println(inBuffer.charAt(i));
+          bot = Integer.parseInt(aux1);
           
         } else if((inBuffer.charAt(i) != '-') && cont == 2){
           aux2 += inBuffer.charAt(i);
           println(inBuffer.charAt(i));
+          pot2 = Integer.parseInt(aux2);
           
         } else if((inBuffer.charAt(i) != '-') && cont == 3){
           aux3 += inBuffer.charAt(i);
@@ -45,13 +48,13 @@ void serial(){
           println("");
         }
       }
-      pot1 = Integer.parseInt(aux0);
-      bot = Integer.parseInt(aux1);
-      pot2 = Integer.parseInt(aux2);
+      //pot1 = Integer.parseInt(aux0);
+      //bot = Integer.parseInt(aux1);
+      //pot2 = Integer.parseInt(aux2);
     
-      pot1 = map(pot1 ,0,1020, 0, height);
-      pot2 = map(pot2 ,0,1020, 0, height);
-      cont = 0;
+      //pot1 = map(pot1 ,0,1020, 0, height);
+      //pot2 = map(pot2 ,0,1020, 0, height);
+      //cont = 0;
       
     }
     
