@@ -37,7 +37,7 @@ void movementDraw()
   // Test to see if the shape exceeds the boundaries of the screen and the paddle 
   // If it does, reverse its direction by multiplying by -1 or place the ball in the middle and increase the score
   
-  if (xpos < 68 && (ypos < mouseY+200 && ypos > mouseY) || xpos > width-68 && (ypos < mouseY+200 && ypos > mouseY)) {
+  if (xpos < 68 && (ypos < pot1 +200 && ypos > pot1) || xpos > width-68 && (ypos < pot2+200 && ypos > pot2)) {
     xdirection *= -1;   
   } else if (xpos > width) {
     scoreLeft = scoreLeft + 1;    

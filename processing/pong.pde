@@ -11,6 +11,7 @@ void setup(){
  foto = loadImage("/home/rod/Computer-Vision-IEE-RAS-desafio/desafio_VC_RAS/images/penguin.jpeg");
  fullScreen(); 
  movementSetup();
+ serialSetup();
 }
 
 
